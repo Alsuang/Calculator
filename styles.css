@@ -1,0 +1,63 @@
+.display {
+  grid-area: display;
+  font-size: 64px;
+}
+.digit-row-1 {
+  display:flex;
+  grid-area: row1;
+  justify-content: space-evenly;
+}
+.digit-row-2 {
+  display: flex;
+  grid-area: row2;
+}
+
+.digit-row-1 .digit{
+  flex:1;
+}
+#sum{
+  flex: 1;
+}
+.digit-row-2 .digit{
+  flex:1;
+}
+.digit-row-3 .digit{
+  flex:1;
+}
+#sub{
+  flex:1;
+}
+.clear{
+  flex:1;
+}
+.digit-row-3 {
+  grid-area: row3;
+  display:flex;
+}
+.last-row {
+  display: flex;
+  grid-area: bottom;
+}
+
+.last-row .operator{
+  flex:1;
+}
+.equals{
+  flex:1;
+}
+#zero {
+flex: 1;
+}
+.container {
+  height: 700px;
+  display:grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: auto;
+grid-template-areas: 
+    "display display display display"
+    "row1 row1 row1 row1"
+    "row2 row2 row2 row2"
+    "row3 row3 row3 row3"
+    "bottom bottom bottom bottom"
+
+}
